@@ -302,8 +302,8 @@ $('.blackhole').click(function(ev){
             var gC = Math.round((Math.random() * 255) + 153);
             var bC = Math.round((Math.random() * 255) + 153);
 
-            var offsetCometX = Math.floor(Math.random() * 400) + 200;  
-            var offsetCometY = Math.floor(Math.random() * 400) + 200;  
+            var offsetCometX = Math.floor(Math.random() * 400) + 60;  
+            var offsetCometY = Math.floor(Math.random() * 400) + 60;  
             var plusOrMinusCometX = Math.random() < 0.5 ? -1 : 1;
             var plusOrMinusCometY = Math.random() < 0.5 ? -1 : 1; 
 
