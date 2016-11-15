@@ -46,10 +46,6 @@ $(document).ready(function() {
     });
 
 
-    // });
-
-
-
 //onClick add galaxy
 $('.blackhole').click(function(ev){
 
@@ -60,8 +56,12 @@ $('.blackhole').click(function(ev){
     var gG = Math.round((Math.random() * 206) + 0);
     var bG = Math.round((Math.random() * 255) + 128);
 
-    var offsetGalaxyX = Math.floor(Math.random() * 160) + 20;  
-    var offsetGalaxyY = Math.floor(Math.random() * 160) + 20;  
+    var randomOffsetGalaxyXmax = Math.floor(Math.random() * 200) + 120;
+    var randomOffsetGalaxyXmin = Math.floor(Math.random() * 40) + 10;
+    var randomOffsetGalaxyYmax = Math.floor(Math.random() * 200) + 120;
+    var randomOffsetGalaxyYmin = Math.floor(Math.random() * 40) + 10;
+    var offsetGalaxyX = Math.floor(Math.random() * randomOffsetGalaxyXmax) + randomOffsetGalaxyXmin;  
+    var offsetGalaxyY = Math.floor(Math.random() * randomOffsetGalaxyYmax) + randomOffsetGalaxyYmin;  
     var plusOrMinusGalaxyX = Math.random() < 0.5 ? -1 : 1;
     var plusOrMinusGalaxyY = Math.random() < 0.5 ? -1 : 1;
 
@@ -101,8 +101,12 @@ $('.blackhole').click(function(ev){
     var gN = Math.round((Math.random() * 255) + 102);
     var bN = Math.round((Math.random() * 204) + 0);
 
-    var offsetNebulaX = Math.floor(Math.random() * 200) + 80;  
-    var offsetNebulaY = Math.floor(Math.random() * 200) + 80;  
+    var randomOffsetNebulaXmax = Math.floor(Math.random() * 240) + 140;
+    var randomOffsetNebulaXmin = Math.floor(Math.random() * 70) + 20;
+    var randomOffsetNebulaYmax = Math.floor(Math.random() * 240) + 140;
+    var randomOffsetNebulaYmin = Math.floor(Math.random() * 70) + 20;
+    var offsetNebulaX = Math.floor(Math.random() * randomOffsetNebulaXmax) + randomOffsetNebulaXmin;  
+    var offsetNebulaY = Math.floor(Math.random() * randomOffsetNebulaYmax) + randomOffsetNebulaYmin;  
     var plusOrMinusNebulaX = Math.random() < 0.5 ? -1 : 1;
     var plusOrMinusNebulaY = Math.random() < 0.5 ? -1 : 1;
 
@@ -141,8 +145,12 @@ $('.blackhole').click(function(ev){
       var gS = Math.round((Math.random() * 255) + 100);
       var bS = Math.round((Math.random() * 240) + 0);
 
-      var offsetStarX = Math.floor(Math.random() * 180) + 80;  
-      var offsetStarY = Math.floor(Math.random() * 180) + 80;  
+      var randomOffsetStarXmax = Math.floor(Math.random() * 300) + 120;
+      var randomOffsetStarXmin = Math.floor(Math.random() * 60) + 20;
+      var randomOffsetStarYmax = Math.floor(Math.random() * 300) + 120;
+      var randomOffsetStarYmin = Math.floor(Math.random() * 60) + 20;
+      var offsetStarX = Math.floor(Math.random() * randomOffsetStarXmax) + randomOffsetStarXmin;  
+      var offsetStarY = Math.floor(Math.random() * randomOffsetStarYmax) + randomOffsetStarYmin;  
       var plusOrMinusStarX = Math.random() < 0.5 ? -1 : 1;
       var plusOrMinusStarY = Math.random() < 0.5 ? -1 : 1;
 
@@ -181,8 +189,12 @@ $('.blackhole').click(function(ev){
         var gP = Math.round((Math.random() * 255) + 0);
         var bP = Math.round((Math.random() * 255) + 0);
 
-        var offsetPlanetX = Math.floor(Math.random() * 280) + 80;  
-        var offsetPlanetY = Math.floor(Math.random() * 280) + 80;  
+        var randomOffsetPlanetXmax = Math.floor(Math.random() * 200) + 60;
+        var randomOffsetPlanetXmin = Math.floor(Math.random() * 30) + 5;
+        var randomOffsetPlanetYmax = Math.floor(Math.random() * 200) + 60;
+        var randomOffsetPlanetYmin = Math.floor(Math.random() * 30) + 5;
+        var offsetPlanetX = Math.floor(Math.random() * randomOffsetPlanetXmax) + randomOffsetPlanetXmin;  
+        var offsetPlanetY = Math.floor(Math.random() * randomOffsetPlanetYmax) + randomOffsetPlanetYmin;  
         var plusOrMinusPlanetX = Math.random() < 0.5 ? -1 : 1;
         var plusOrMinusPlanetY = Math.random() < 0.5 ? -1 : 1;
 
@@ -222,8 +234,12 @@ $('.blackhole').click(function(ev){
           var gM = Math.round((Math.random() * 20) + -20) + M;
           var bM = Math.round((Math.random() * 20) + -20) + M;
 
-          var offsetMoonX = Math.floor(Math.random() * 160) + 30;  
-          var offsetMoonY = Math.floor(Math.random() * 160) + 30;  
+          var randomOffsetMoonXmax = Math.floor(Math.random() * 100) + 40;
+          var randomOffsetMoonXmin = Math.floor(Math.random() * 20) + 0;
+          var randomOffsetMoonYmax = Math.floor(Math.random() * 100) + 40;
+          var randomOffsetMoonYmin = Math.floor(Math.random() * 20) + 0;
+          var offsetMoonX = Math.floor(Math.random() * randomOffsetMoonXmax) + randomOffsetMoonXmin;  
+          var offsetMoonY = Math.floor(Math.random() * randomOffsetMoonYmax) + randomOffsetMoonYmin;  
           var plusOrMinusMoonX = Math.random() < 0.5 ? -1 : 1;
           var plusOrMinusMoonY = Math.random() < 0.5 ? -1 : 1;
 
@@ -262,8 +278,12 @@ $('.blackhole').click(function(ev){
           var gA = Math.round((Math.random() * 204) + 0);
           var bA = Math.round((Math.random() * 204) + 0);
 
-          var offsetAsteroidX = Math.floor(Math.random() * 160) + 50;  
-          var offsetAsteroidY = Math.floor(Math.random() * 160) + 50;  
+          var randomOffsetAsteroidXmax = Math.floor(Math.random() * 450) + 140;
+          var randomOffsetAsteroidXmin = Math.floor(Math.random() * 100) + 15;
+          var randomOffsetAsteroidYmax = Math.floor(Math.random() * 450) + 140;
+          var randomOffsetAsteroidYmin = Math.floor(Math.random() * 100) + 15;
+          var offsetAsteroidX = Math.floor(Math.random() * randomOffsetAsteroidXmax) + randomOffsetAsteroidXmin;  
+          var offsetAsteroidY = Math.floor(Math.random() * randomOffsetAsteroidYmax) + randomOffsetAsteroidYmin;  
           var plusOrMinusAsteroidX = Math.random() < 0.5 ? -1 : 1;
           var plusOrMinusAsteroidY = Math.random() < 0.5 ? -1 : 1;
 
@@ -302,8 +322,12 @@ $('.blackhole').click(function(ev){
             var gC = Math.round((Math.random() * 255) + 153);
             var bC = Math.round((Math.random() * 255) + 153);
 
-            var offsetCometX = Math.floor(Math.random() * 400) + 60;  
-            var offsetCometY = Math.floor(Math.random() * 400) + 60;  
+            var randomOffsetCometXmax = Math.floor(Math.random() * 600) + 180;
+            var randomOffsetCometXmin = Math.floor(Math.random() * 120) + 20;
+            var randomOffsetCometYmax = Math.floor(Math.random() * 600) + 180;
+            var randomOffsetCometYmin = Math.floor(Math.random() * 120) + 20;
+            var offsetCometX = Math.floor(Math.random() * randomOffsetCometXmax) + randomOffsetCometXmin;  
+            var offsetCometY = Math.floor(Math.random() * randomOffsetCometYmax) + randomOffsetCometYmin;  
             var plusOrMinusCometX = Math.random() < 0.5 ? -1 : 1;
             var plusOrMinusCometY = Math.random() < 0.5 ? -1 : 1; 
 
@@ -359,89 +383,7 @@ $('#infobtn').click(function(){
     $('#info').toggle();
 });
 
-  // //add random audio class
-  //   function randomIntFromInterval(min, max) {
-  //   return Math.floor(Math.random() * (max - min + 1) + min);
-  //   }
-
-  //   //Black Hole
-  //   var a = randomIntFromInterval(1, 11);
-  //   var mySound1;
-  //   switch (a) {
-  //     case 1:
-  //       mySound1 = "a0";
-  //       break;
-  //     case 2:
-  //       mySound1 = "bb0";
-  //       break;
-  //     case 3:
-  //       mySound1 = "b0";
-  //       break;
-  //     case 4:
-  //       mySound1 = "c1";
-  //       break;
-  //     case 5:
-  //       mySound1 = "db1";
-  //       break;
-  //     case 6:
-  //       mySound1 = "d1";
-  //       break;
-  //     case 7:
-  //       mySound1 = "eb1";
-  //       break;
-  //     case 8:
-  //       mySound1 = "e1";
-  //       break;
-  //     case 9:
-  //       mySound1 = "f1";
-  //       break;
-  //     case 10:
-  //       mySound1 = "gb1";
-  //       break;
-  //     case 11:
-  //       mySound1 = "g1";
-  //       break;
-  //   };
-
-    //Galaxy
-  //   var b = randomIntFromInterval(1, 11);
-  //   var mySound2;
-  //   switch (b) {
-  //     case 1:
-  //       mySound2 = "ab1";
-  //       break;
-  //     case 2:
-  //       mySound2 = "a1";
-  //       break;
-  //     case 3:
-  //       mySound2 = "bb1";
-  //       break;
-  //     case 4:
-  //       mySound2 = "b1";
-  //       break;
-  //     case 5:
-  //       mySound2 = "c2";
-  //       break;
-  //     case 6:
-  //       mySound2 = "db2";
-  //       break;
-  //     case 7:
-  //       mySound2 = "d1";
-  //       break;
-  //     case 8:
-  //       mySound2 = "eb1";
-  //       break;
-  //     case 9:
-  //       mySound2 = "e1";
-  //       break;
-  //     case 10:
-  //       mySound2 = "f1";
-  //       break;
-  //     case 11:
-  //       mySound2 = "gb1";
-  //       break;
-  //   };
-
+ 
 
 
 });
